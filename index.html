@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Baron fight </title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="Style.css" rel="stylesheet">
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="CountingBlock">
+            <img src="rp.png" id="GEM2">
+            <h1>Riot Points: <a id="count"> 0</a></h1>
+            <p>RP / Sec: <a id="GemsPerSecond">0</a></p>
+            <h1>Army:<a id="WorkerCount"> 0</a></h1>
+            <button onclick="Active1()">1 Riot Point</button>
+        </div>
+        <hr>
+        <h1>Summoner's Rift Champions</h1>
+        <!-- Yasuo  -->
+        <div id="SamGroup">
+            <li id="SamUpgrade1">
+                <p>Yasuo: <a id="WorkerSam"> 0</a></p><a><img src="SAM.png" id="SAM"></a>
+                <p>Cost: (10<a><img src="rp.png" class="riotpoint" ></a>) </p>
+                <a id="damage"> Damage: 30</a>
+                <p>Production: 0.5 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active2()"> Buy 1x Yasuo</button>
+                <button onclick="Active2_1()"> Buy 5x Yasuo</button>
+                <button id="UpgradeButtonSam1" onclick="UpgradeSam1()">Upgrade 1 000 <a><img src="rp.png" class="riotpoint" ></a></button>
+            </li>
+            <li id="SamUpgrade2">
+                <p>Project Yasuo: <a id="WorkerSam_2"> 0</a></p><a><img src="SAM_2.png" id="SAM_2"></a>
+                <p>Cost: (100<a><img src="rp.png" class="riotpoint" ></a>)</p>
+                <a id="damage"> Damage: 300</a>
+                <p>Production: 5 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active2_2()"> 1x Project Yasuo</button>
+                <button onclick="Active2_3()"> 5x Project Yasuo</button>
+                <button id="UpgradeButtonSam2" onclick="UpgradeSam2()">Upgrade 5 000 <img src="rp.png" class="riotpoint" ></a></button>
+            </li>
+            <li id="SamUpgrade3">
+                <p>Demonblade Yasuo: <a id="WorkerSam_3"> 0</a></p><a><img src="SAM_3.png" id="SAM_3"></a>
+                <p>Cost: (1 000 <a><img src="rp.png" class="riotpoint" ></a>) </p>
+                <a id="damage"> Damage: 3 000</a>
+                <p>Production: 50 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active2_4()"> Buy 1x Nightbringer Yasuo</button>
+                <button onclick="Active2_5()"> Buy 5x Nightbringer Yasuo</button>
+               <div id="stealth"> <button id="UpgradeButtonSam2" onclick="UpgradeSam2()">Upgrade 100 000 <img src="rp.png" class="riotpoint" ></a></button></div>
+            </li>
+        </div>
+        <hr>
+        <!-- FIora  -->
+        <div id="RickGroup">
+            <li id="FioraUpgrade1">
+                <p>Fiora: <a id="WorkerRick">0</a></p><a><img src="RICK.jfif" id="RICK"></a>
+                <p>Cost: (250 <a><img src="rp.png" class="riotpoint" ></a>)</p>
+                <a id="damage"> Damage: 750</a>
+                <p>Production: 16,5 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active3()"> Buy 1x Fiora</button>
+                <button onclick="Active3_1()"> Buy 5x Fiora</button>
+                <button id="UpgradeButtonFiora1" onclick="UpgradeFiora1()">Upgrade 25 000 <a><img src="rp.png" class="riotpoint" ></a></button>
+            </li>
+            <li id="FioraUpgrade2">
+                <p>Bazénová Fiora: <a id="WorkerRick_2">0</a></p><a><img src="RICK_2.jpg" id="RICK"></a>
+                <p>Cost: (2 500 <a><img src="rp.png" class="riotpoint" ></a>) </p>
+                <a id="damage"> Damage: 7 500</a>
+                <p>Production: 166,5 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active3_2()"> Buy 1x Fiora</button>
+                <button onclick="Active3_3()"> Buy 5x Fiora</button>
+                <button id="UpgradeButtonFiora2" onclick="UpgradeFiora2()">Upgrade 125 000 <img src="rp.png" class="riotpoint" ></a></button>
+            </li>
+            <li id="FioraUpgrade3">
+                <p>Zlatá Fiora: <a id="WorkerRick_3">0</a></p><a><img src="RICK_3.png" id="RICK"></a>
+                <p>Cost: (25 000 <a><img src="rp.png" class="riotpoint" ></a>) </p>
+                <a id="damage"> Damage: 75 000</a>
+                <p>Production: 1 666,5 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active3_4()"> Buy 1x Fiora</button>
+                <button onclick="Active3_5()"> Buy 5x Fiora</button>
+                <div id="stealth"> <button id="UpgradeButtonSam2" onclick="UpgradeSam2()">Upgrade 100 000 <img src="rp.png" class="riotpoint" ></a></button></div>
+            </li>
+        </div>
+        <hr>
+        <!-- Darius -->
+        <div id="MaxGroup">
+            <li id="DariusUpgrade1">
+                <p>Darius: <a id="WorkerMax">0</a></p><a><img src="MAX.jpg" id="MAX"></a>
+                <p>Cost: (5 000 <a><img src="rp.png" class="riotpoint" ></a>)</p>
+                <a id="damage"> Damage: 15 000</a>
+                <p>Production: 500 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active4()"> Buy 1x Darius</button>
+                <button onclick="Active4_1()"> Buy 5x Darius</button>
+                <button id="UpgradeButtonDarius1" onclick="UpgradeDarius1()">Upgrade 500 000 <a><img src="rp.png" class="riotpoint" ></a></button>
+            </li>
+            <li id="DariusUpgrade2">
+                <p>Zabiják Dárius: <a id="WorkerMax_2">0</a></p><a><img src="MAX_2.png" id="MAX"></a>
+                <p>Cost: (50 000 <a><img src="rp.png" class="riotpoint" ></a>) </p>
+                <a id="damage"> Damage: 150 000</a>
+                <p>Production: 5 000 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active4_2()"> Buy 1x Darius</button>
+                <button onclick="Active4_3()"> Buy 5x Darius</button>
+                <button id="UpgradeButtonDarius2" onclick="UpgradeDarius2()">Upgrade 2 500 000 <img src="rp.png" class="riotpoint" ></a></button>
+            </li>
+            <li id="DariusUpgrade3">
+                <p>Toxický Zabiják Baronů Darius: <a id="WorkerMax_3">0</a></p><a><img src="MAX_3.png" id="MAX"></a>
+                <p>Cost: (500 000 <a><img src="rp.png" class="riotpoint" ></a>) </p>
+                <a id="damage"> Damage: 1 500 000</a>
+                <p>Production: 50 000 <a><img src="rp.png" class="riotpoint" ></a> / Second.</p>
+                <button onclick="Active4_4()"> Buy 1x Darius</button>
+                <button onclick="Active4_5()"> Buy 5x Darius</button>
+                <div id="stealth"> <button id="UpgradeButtonSam2" onclick="UpgradeSam2()">Upgrade 100 000 <img src="rp.png" class="riotpoint" ></a></button></div>
+            </li>
+        </div>
+        <hr>
+        <img id="ErrorMessage" src="NoClicks.jpg">
+        <img id="ErrorMessage1" src="DragonKill.png">
+        <img id="ErrorMessage2" src="NoArmy.jpg">
+    </div>
+    <div id="champ"><h1>Your Champions:<a id="WorkerCount1"> 0</a></h1></div>
+    <hr>
+    <div id="DragonFight">
+        <h3>Baron Health: <a id="DragonHealth">10000000</a><a> / 10,000,000 Health</a><a> <button onclick="AtackDragon(),GameOver()"> Atack Baron </button></a></h3>
+        <img src="DRAGON.png" id="DRAGON">
+    </div>
+    <div id="WorkerField">
+    </div>
+</body>
+
+</html>

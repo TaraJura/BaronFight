@@ -1,0 +1,146 @@
+
+body {
+    background: url("summonersrift1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#CountingBlock {
+    text-align: center;
+}
+
+#stealth {
+    visibility: hidden;
+}
+
+#ErrorMessage {
+    width: 50%;
+    position: fixed;
+    top: 30%;
+    height: 40%;
+    left: 25%;
+    visibility: hidden;
+}
+
+#ErrorMessage1 {
+    width: 50%;
+    position: fixed;
+    top: 30%;
+    height: 40%;
+    left: 25%;
+    visibility: hidden;
+}
+
+#ErrorMessage2 {
+    width: 50%;
+    position: fixed;
+    top: 30%;
+    height: 40%;
+    left: 25%;
+    visibility: hidden;
+}
+
+#container {
+    margin: 0 10% 0 10%;
+    background-color: rgb(236, 236, 236);
+    border: 5px ;
+    border-style: solid;
+    opacity: 80%;
+}
+
+#SAM, #RICK, #MAX, #SAM_2, #SAM_3 {
+    height: 50px;
+    width: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+#GEM {
+    position: absolute;
+    height: 10%;
+    width: auto;
+    top: 8%;
+    left: 37.5%;
+}#GEM2 {
+    height: 5%;
+    width: 5%;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    width: 30%;
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+button {
+    border-radius: 10px;
+    background-color: lightblue;
+    color: black;
+}
+
+#SamUpgrade2 {
+    visibility: hidden;
+}
+
+#SamUpgrade3 {
+    visibility: hidden;
+}
+
+#FioraUpgrade2 {
+    visibility: hidden;
+}
+
+#FioraUpgrade3 {
+    visibility: hidden;
+}
+
+#DariusUpgrade2 {
+    visibility: hidden;
+}
+
+#DariusUpgrade3 {
+    visibility: hidden;
+}
+
+#UpgradeButtonSam1 {
+    visibility: visible;
+}
+
+#UpgradeButtonFiora1 {
+    visibility: visible;
+}
+
+#UpgradeButtonDarius1 {
+    visibility: visible;
+}
+
+
+#DRAGON {
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+#DragonFight {
+    text-align: center;
+    color: lightcoral;
+}
+
+#damage {
+    color: mediumblue;
+}
+
+.riotpoint {
+    height: 4%;
+    width: 4%;
+}
+
+#champ {
+    background-color: blanchedalmond;
+}
