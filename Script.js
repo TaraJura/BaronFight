@@ -29,7 +29,7 @@ function WorkerSamPicture_3() {
 
 function WorkerRickPicture() {
     var RICK = document.createElement("IMG");
-    RICK.setAttribute("src", "RICK.jfif");
+    RICK.setAttribute("src", "RICK.png");
     RICK.setAttribute("height", "50");
     RICK.setAttribute("width", "auto");
     RICK.setAttribute("class", "picture");
@@ -38,7 +38,7 @@ function WorkerRickPicture() {
 
 function WorkerRickPicture_2() {
     var RICK = document.createElement("IMG");
-    RICK.setAttribute("src", "RICK_2.jpg");
+    RICK.setAttribute("src", "RICK_2.png");
     RICK.setAttribute("height", "50");
     RICK.setAttribute("width", "auto");
     RICK.setAttribute("class", "picture");
@@ -57,7 +57,7 @@ function WorkerRickPicture_3() {
 
 function WorkerMaxPicture() {
     var MAX = document.createElement("IMG");
-    MAX.setAttribute("src", "MAX.jpg");
+    MAX.setAttribute("src", "MAX.png");
     MAX.setAttribute("height", "50");
     MAX.setAttribute("width", "auto");
     MAX.setAttribute("class", "picture");
@@ -89,8 +89,8 @@ function WorkerMaxPicture_3() {
 var GemsPerSecCounter = document.getElementById("GemsPerSecond");
 
 function GemsPerSecond() {
-    document.getElementById("GemsPerSecond").innerHTML = (WorkerSam * 0.5) + (WorkerSam_2 * 5) + (WorkerSam_3 * 50) + (WorkerRick * 16.5) + (WorkerRick_2 * 166.5) + (WorkerRick_3 * 1666.5) + (WorkerMax * 500) + (WorkerMax_2 * 5000) + (WorkerMax_3 * 50000); 
-    GemsPerSecCounter = (WorkerSam * 0.5) + (WorkerSam_2 * 5) + (WorkerSam_3 * 50) + (WorkerRick * 16.5) + (WorkerRick_2 * 166.5) + (WorkerRick_3 * 1666.5) + (WorkerMax * 500) + (WorkerMax_2 * 5000) + (WorkerMax_3 * 50000);
+    document.getElementById("GemsPerSecond").innerHTML = (WorkerSam * 0.5) + (WorkerSam_2 * 5) + (WorkerSam_3 * 25) + (WorkerRick * 666.5) + (WorkerRick_2 * 6666.5) + (WorkerRick_3 * 33333.5 + (WorkerMax * 20000) + (WorkerMax_2 * 200000) + (WorkerMax_3 * 1000000)); 
+    GemsPerSecCounter = (WorkerSam * 0.5) + (WorkerSam_2 * 5) + (WorkerSam_3 * 25) + (WorkerRick * 666.5) + (WorkerRick_2 * 6666.5) + (WorkerRick_3 * 33333.5 + (WorkerMax * 20000) + (WorkerMax_2 * 200000) + (WorkerMax_3 * 1000000)); 
 }
 
 
@@ -223,9 +223,9 @@ var WorkerSam_3 = document.getElementById("WorkerSam_3");
 
 function Active2_4() {
 
-    if (count >= 1000 ) {
-        document.getElementById("count").innerHTML = +count - 1000;
-        count = +count - 1000;
+    if (count >= 500 ) {
+        document.getElementById("count").innerHTML = +count - 500;
+        count = +count - 500;
         document.getElementById("WorkerSam_3").innerHTML = +WorkerSam_3 + 1;
         WorkerSam_3 = +WorkerSam_3 + 1;
         WorkerSamPicture_3();
@@ -238,9 +238,9 @@ function Active2_4() {
 
 function Active2_5() {
 
-    if (count >= 5000) {
-        document.getElementById("count").innerHTML = +count - 5000;
-        count = +count - 5000;
+    if (count >= 2500) {
+        document.getElementById("count").innerHTML = +count - 2500;
+        count = +count - 2500;
         document.getElementById("WorkerSam_3").innerHTML = +WorkerSam_3 + 5;
         WorkerSam_3 = +WorkerSam_3 + 5;
         WorkerSamPicture_3();
@@ -260,10 +260,10 @@ function Active2_5() {
  var WorkerRick = document.getElementById("WorkerRick");
 
  function Active3() {
-     if (count >= 250) {
+     if (count >= 10000) {
  
-         document.getElementById("count").innerHTML = +count - 250;
-         count = +count - 250;
+         document.getElementById("count").innerHTML = +count - 10000;
+         count = +count - 10000;
          document.getElementById("WorkerRick").innerHTML = +WorkerRick + 1;
          WorkerRick = +WorkerRick + 1;
          WorkerRickPicture();
@@ -301,9 +301,9 @@ function Active2_5() {
 var WorkerRick_2 = document.getElementById("WorkerRick_2");
 
 function Active3_2() {
-    if (count >= 2500) {
-        document.getElementById("count").innerHTML = +count - 2500;
-        count = +count - 2500;
+    if (count >= 100000) {
+        document.getElementById("count").innerHTML = +count - 100000;
+        count = +count - 100000;
         document.getElementById("WorkerRick_2").innerHTML = +WorkerRick_2 + 1;
         WorkerRick_2 = +WorkerRick_2 + 1;
         WorkerRickPicture_2();
@@ -315,9 +315,9 @@ function Active3_2() {
 }
 
 function Active3_3() {
-    if (count > 12500) {
-        document.getElementById("count").innerHTML = +count - 12500;
-        count = +count - 12500;
+    if (count > 500000) {
+        document.getElementById("count").innerHTML = +count - 500000;
+        count = +count - 500000;
         document.getElementById("WorkerRick_2").innerHTML = +WorkerRick_2 + 5;
         WorkerRick_2 = +WorkerRick_2 + 5;
         WorkerRickPicture_2();
@@ -338,9 +338,9 @@ var WorkerRick_3 = document.getElementById("WorkerRick_3");
 
 function Active3_4() {
 
-    if (count >= 25000 ) {
-        document.getElementById("count").innerHTML = +count - 25000;
-        count = +count - 25000;
+    if (count >= 2500000 ) {
+        document.getElementById("count").innerHTML = +count - 2500000;
+        count = +count - 2500000;
         document.getElementById("WorkerRick_3").innerHTML = +WorkerRick_3 + 1;
         WorkerRick_3 = +WorkerRick_3 + 1;
         WorkerRickPicture_3();
@@ -353,9 +353,9 @@ function Active3_4() {
 
 function Active3_5() {
 
-    if (count >= 125000) {
-        document.getElementById("count").innerHTML = +count - 125000;
-        count = +count - 125000;
+    if (count >= 1250000) {
+        document.getElementById("count").innerHTML = +count - 1250000;
+        count = +count - 1250000;
         document.getElementById("WorkerRick_3").innerHTML = +WorkerRick_3 + 5;
         WorkerRick_3 = +WorkerRick_3 + 5;
         WorkerRickPicture_3();
@@ -375,10 +375,10 @@ function Active3_5() {
   var WorkerMax = document.getElementById("WorkerMax");
  
   function Active4() {
-      if (count > 5000) {
+      if (count > 1000000) {
  
-          document.getElementById("count").innerHTML = +count - 5000;
-          count = +count - 5000;
+          document.getElementById("count").innerHTML = +count - 1000000 ;
+          count = +count - 1000000;
           document.getElementById("WorkerMax").innerHTML = +WorkerMax + 1;
           WorkerMax = +WorkerMax + 1;
           WorkerMaxPicture();
@@ -392,10 +392,10 @@ function Active3_5() {
   }
   
   function Active4_1() {
-      if (count >= 25000) {
+      if (count >= 5000000) {
  
-          document.getElementById("count").innerHTML = +count - 25000;
-          count = +count - 25000;
+          document.getElementById("count").innerHTML = +count - 5000000;
+          count = +count - 5000000;
           document.getElementById("WorkerMax").innerHTML = +WorkerMax + 5;
           WorkerMax = +WorkerMax + 5;
           WorkerMaxPicture();
@@ -417,9 +417,9 @@ function Active3_5() {
 var WorkerMax_2 = document.getElementById("WorkerMax_2");
 
 function Active4_2() {
-    if (count >= 50000) {
-        document.getElementById("count").innerHTML = +count - 50000;
-        count = +count - 50000;
+    if (count >= 10000000) {
+        document.getElementById("count").innerHTML = +count - 10000000;
+        count = +count - 10000000;
         document.getElementById("WorkerMax_2").innerHTML = +WorkerMax_2 + 1;
         WorkerMax_2 = +WorkerMax_2 + 1;
         WorkerMaxPicture_2();
@@ -431,9 +431,9 @@ function Active4_2() {
 }
 
 function Active4_3() {
-    if (count > 250000) {
-        document.getElementById("count").innerHTML = +count - 250000;
-        count = +count - 250000;
+    if (count > 50000000 ) {
+        document.getElementById("count").innerHTML = +count - 50000000;
+        count = +count - 50000000;
         document.getElementById("WorkerMax_2").innerHTML = +WorkerMax_2 + 5;
         WorkerMax_2 = +WorkerMax_2 + 5;
         WorkerMaxPicture_2();
@@ -454,9 +454,9 @@ var WorkerMax_3 = document.getElementById("WorkerMax_3");
 
 function Active4_4() {
 
-    if (count >= 500000 ) {
-        document.getElementById("count").innerHTML = +count - 500000;
-        count = +count - 500000;
+    if (count >= 50000000 ) {
+        document.getElementById("count").innerHTML = +count - 50000000;
+        count = +count - 50000000;
         document.getElementById("WorkerMax_3").innerHTML = +WorkerMax_3 + 1;
         WorkerMax_3 = +WorkerMax_3 + 1;
         WorkerMaxPicture_3();
@@ -469,9 +469,9 @@ function Active4_4() {
 
 function Active4_5() {
 
-    if (count >= 2500000) {
-        document.getElementById("count").innerHTML = +count - 2500000;
-        count = +count - 2500000;
+    if (count >= 250000000) {
+        document.getElementById("count").innerHTML = +count - 250000000;
+        count = +count - 250000000;
         document.getElementById("WorkerMax_3").innerHTML = +WorkerMax_3 + 5;
         WorkerMax_3 = +WorkerMax_3 + 5;
         WorkerMaxPicture_3();
@@ -517,11 +517,11 @@ function DissmissUpgradeButton2Darius() {
 // Upgrade YASUO 1 // 
 
 function UpgradeSam1() {
-    if (count >= 1000 ) {
+    if (count >= 5000 ) {
 
     document.getElementById("SamUpgrade2").style.visibility = "visible";
-    document.getElementById("count").innerHTML = +count - 1000;
-    count = +count - 1000;
+    document.getElementById("count").innerHTML = +count - 5000;
+    count = +count - 5000;
     DissmissUpgradeButton()
 
     } else {
@@ -534,11 +534,11 @@ function UpgradeSam1() {
 // Upgrade FIORA 1 // 
 
 function UpgradeFiora1() {
-    if (count >= 25000) {
+    if (count >= 1000000) {
 
     document.getElementById("FioraUpgrade2").style.visibility = "visible";
-    document.getElementById("count").innerHTML = +count - 25000;
-    count = +count - 25000;
+    document.getElementById("count").innerHTML = +count - 1000000;
+    count = +count - 1000000;
     DissmissUpgradeButtonFiora()
 
     } else {
@@ -551,11 +551,11 @@ function UpgradeFiora1() {
 // Upgrade Darius 1 // 
 
 function UpgradeDarius1() {
-    if (count >= 500000) {
+    if (count >= 1000000000) {
 
     document.getElementById("DariusUpgrade2").style.visibility = "visible";
-    document.getElementById("count").innerHTML = +count - 500000;
-    count = +count - 500000;
+    document.getElementById("count").innerHTML = +count - 1000000000;
+    count = +count - 1000000000;
     DissmissUpgradeButtonDarius()
 
     } else {
@@ -568,11 +568,11 @@ function UpgradeDarius1() {
 // Upgrade YASUO 2// 
 
 function UpgradeSam2() {
-    if (count >= 5000) {
+    if (count >= 50000) {
 
     document.getElementById("SamUpgrade3").style.visibility = "visible";
-    document.getElementById("count").innerHTML = +count - 5000;
-    count = +count - 5000;
+    document.getElementById("count").innerHTML = +count - 50000;
+    count = +count - 50000;
     DissmissUpgradeButton2()
 
     } else {
@@ -584,11 +584,11 @@ function UpgradeSam2() {
 // Upgrade Fiora 2// 
 
 function UpgradeFiora2() {
-    if (count >= 125000 ) {
+    if (count >= 10000000 ) {
 
     document.getElementById("FioraUpgrade3").style.visibility = "visible";
-    document.getElementById("count").innerHTML = +count - 125000;
-    count = +count - 125000;
+    document.getElementById("count").innerHTML = +count - 10000000;
+    count = +count - 10000000;
     DissmissUpgradeButton2Fiora()
 
     } else {
@@ -600,11 +600,11 @@ function UpgradeFiora2() {
 // Upgrade Darius 2// 
 
 function UpgradeDarius2() {
-    if (count >= 2500000) {
+    if (count >= 10000000000) {
 
     document.getElementById("DariusUpgrade3").style.visibility = "visible";
-    document.getElementById("count").innerHTML = +count - 2500000;
-    count = +count - 2500000;
+    document.getElementById("count").innerHTML = +count - 10000000000;
+    count = +count - 10000000000;
     DissmissUpgradeButton2Darius()
 
     } else {
@@ -625,26 +625,26 @@ function Work1() {
     document.getElementById("count").innerHTML = +count + (+WorkerSam_2 * 5);
     count = +count + (+WorkerSam_2 * 5);
 
-    document.getElementById("count").innerHTML = +count + (+WorkerSam_3 * 50);
-    count = +count + (+WorkerSam_3 * 50);
+    document.getElementById("count").innerHTML = +count + (+WorkerSam_3 * 25);
+    count = +count + (+WorkerSam_3 * 25);
 
-    document.getElementById("count").innerHTML = +count + (+WorkerRick * 16.5);
-    count = +count + (+WorkerRick * 16.5);
+    document.getElementById("count").innerHTML = +count + (+WorkerRick * 666.5);
+    count = +count + (+WorkerRick * 666.5);
 
-    document.getElementById("count").innerHTML = +count + (+WorkerRick_2 * 166.5);
-    count = +count + (+WorkerRick_2 * 166.5);
+    document.getElementById("count").innerHTML = +count + (+WorkerRick_2 * 6666.5);
+    count = +count + (+WorkerRick_2 * 6666.5);
 
-    document.getElementById("count").innerHTML = +count + (+WorkerRick_3 * 1666.5);
-    count = +count + (+WorkerRick_3 * 1666.5);
+    document.getElementById("count").innerHTML = +count + (+WorkerRick_3 * 33333.5);
+    count = +count + (+WorkerRick_3 * 33333.5);
 
-    document.getElementById("count").innerHTML = +count + (+WorkerMax * 500);
-    count = +count + (+WorkerMax * 500);
+    document.getElementById("count").innerHTML = +count + (+WorkerMax * 20000);
+    count = +count + (+WorkerMax * 20000);
 
-    document.getElementById("count").innerHTML = +count + (+WorkerMax_2 * 5000);
-    count = +count + (+WorkerMax_2 * 5000);
+    document.getElementById("count").innerHTML = +count + (+WorkerMax_2 * 200000);
+    count = +count + (+WorkerMax_2 * 200000);
 
-    document.getElementById("count").innerHTML = +count + (+WorkerMax_3 * 50000);
-    count = +count + (+WorkerMax_3 * 50000);
+    document.getElementById("count").innerHTML = +count + (+WorkerMax_3 * 1000000);
+    count = +count + (+WorkerMax_3 * 1000000);
 }
 
 // Worker Count Engine // 
@@ -662,13 +662,13 @@ function WorkerCountFunction() {
 
 // Dragon ///
 
-var DragonHealth = 10000000;
+var DragonHealth = 1250000000;
 
 function AtackDragon() {
     if(WorkerCount > 100) {
 
-    document.getElementById("DragonHealth").innerHTML = +DragonHealth - ((+WorkerSam * 10) + (+WorkerSam_2 * 5000) + (+WorkerSam_3 * 10000) + (+WorkerRick * 50) + (+WorkerRick_2 * 50) + (+WorkerRick_3 * 50) + (+WorkerMax * 1000)+ (+WorkerMax_2 * 1000)+ (+WorkerMax_3 * 1000));
-    DragonHealth = +DragonHealth - ((+WorkerSam * 10) + (+WorkerSam_2 * 5000) + (+WorkerSam_3 * 10000) + (+WorkerRick * 50) + (+WorkerRick_2 * 50) + (+WorkerRick_3 * 50) + (+WorkerMax * 1000)+ (+WorkerMax_2 * 1000)+ (+WorkerMax_3 * 1000));
+    document.getElementById("DragonHealth").innerHTML = +DragonHealth - ((+WorkerSam * 30) + (+WorkerSam_2 * 300) + (+WorkerSam_3 * 1500) + (+WorkerRick * 2000) + (+WorkerRick_2 * 20000) + (+WorkerRick_3 * 100000) + (+WorkerMax * 500000)+ (+WorkerMax_2 * 5000000)+ (+WorkerMax_3 * 25000000));
+    DragonHealth = +DragonHealth - ((+WorkerSam * 30) + (+WorkerSam_2 * 300) + (+WorkerSam_3 * 1500) + (+WorkerRick * 2000) + (+WorkerRick_2 * 20000) + (+WorkerRick_3 * 100000) + (+WorkerMax * 500000)+ (+WorkerMax_2 * 5000000)+ (+WorkerMax_3 * 25000000));
     WorkerSam = 0;
     document.getElementById("WorkerSam").innerHTML = 0;
     WorkerSam_2 = 0;
