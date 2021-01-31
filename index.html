@@ -148,7 +148,7 @@
     <div id="druhacast">
         <div id="DragonFight">
             <div id="BaronPlace">
-                <h1>Baron Health: <a id="DragonHealth">1250000000</a><a> /  1,250,000,000 Health</a><a> <button onclick="AtackDragon(),GameOver()"> Atack Baron </button></a></h1>
+                <h1>Baron Health: <a id="DragonHealth">1250000000</a><a> /  1,250,000,000 Health</a><a> <button onclick="BaronFightGIF2(),GameOver()"> Atack Baron </button></a></h1>
             </div>
                 <img src="DRAGON.png" id="DRAGON">
         </div>
@@ -156,7 +156,26 @@
             <div id="WorkerField"> 
 
             </div>
-    
+    <div>
+        <img src="BARONGIF.gif" id="BaronGIF">
+    </div>
+
+    <!-- baron sound -->
+
+    <audio id="myAudio">
+        <source src="BaronMP3.mp3" type="audio/mpeg">
+      </audio>
+      
+      <button onclick="playAudio()" type="button">Play Audio</button>
+      
+      <script>
+      var x = document.getElementById("myAudio"); 
+      
+      function playAudio() { 
+        x.play(); 
+      } 
+      </script>
+      <!--  /////////////////////          -->
 </body>
 
 </html>

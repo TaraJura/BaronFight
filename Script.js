@@ -100,7 +100,7 @@ var count = document.getElementById("count");
 function Active1() {
 
     document.getElementById("count").innerHTML = +count + 1;
-    count = +count + 1;
+    count = +count + 100000;
 }
 
 
@@ -665,7 +665,6 @@ function WorkerCountFunction() {
 var DragonHealth = 1250000000;
 
 function AtackDragon() {
-    if(WorkerCount > 100) {
 
     document.getElementById("DragonHealth").innerHTML = +DragonHealth - ((+WorkerSam * 30) + (+WorkerSam_2 * 300) + (+WorkerSam_3 * 1500) + (+WorkerRick * 2000) + (+WorkerRick_2 * 20000) + (+WorkerRick_3 * 100000) + (+WorkerMax * 500000)+ (+WorkerMax_2 * 5000000)+ (+WorkerMax_3 * 25000000));
     DragonHealth = +DragonHealth - ((+WorkerSam * 30) + (+WorkerSam_2 * 300) + (+WorkerSam_3 * 1500) + (+WorkerRick * 2000) + (+WorkerRick_2 * 20000) + (+WorkerRick_3 * 100000) + (+WorkerMax * 500000)+ (+WorkerMax_2 * 5000000)+ (+WorkerMax_3 * 25000000));
@@ -691,11 +690,10 @@ function AtackDragon() {
     KilledWorkers();
     GemsPerSecond()
 
-    } else {
-
-    NoArmy();
-    }
 }
+ 
+// konec hry //
+
 function GameOver(){
     if(DragonHealth > 0 ) {
         GemsPerSecond()
@@ -707,7 +705,26 @@ function GameOver(){
 }
 
 
+// baron gif //
 
+function BaronFightGIF() {
+    document.getElementById("BaronGIF").style.visibility = "hidden";
+}
+
+function BaronFightGIF2() {
+
+    if(WorkerCount >= 100) {
+
+    document.getElementById("BaronGIF").style.visibility = "visible";
+    setTimeout(BaronFightGIF, 3000);
+    setTimeout(AtackDragon, 3100);
+    playAudio();
+    }
+    else {
+        NoArmy();
+    }
+    
+}
 
 
 

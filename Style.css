@@ -4,6 +4,15 @@ body {
     background-color: black;
 }
 
+#BaronGIF {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0%;
+    visibility: hidden;
+}
+
 #ClickerButton {
     padding: 2%;
     background-color: black;
