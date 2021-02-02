@@ -53,51 +53,6 @@ body {
 
 /* /////////////////////////////////////////////////////////////////////////////////   */
 
-
-/* ////////////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////////////////////////////*/
-#Items {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    height: 50%;
-    width: 2.5%;
-    background-color: black;
-    border: brown solid 5px;
-    border-radius: 0 10px 10px 0;
-}
-
-#Smite {
-    margin: 1%;
-    height: 19%;
-    width: 100%;
-    background-color: black;
-}
-
-#Smite:hover {
-    background-color: darkred;
-}
-
-#Locked {
-    margin: 1%;
-    height: 19%;
-    width: 100%;
-    background-color: black;
-}
-
-#ItemsShopSmite {
-    position: fixed;
-    height: 50%;
-    width: 50%;
-    top: 25%;
-    left: 25%;
-    background-color: black;
-    text-align: center;
-    color: white;
-    visibility: hidden;
-}
-
-/* //////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////*/
-
 #help {
     position: absolute;
     top: 1%;
@@ -338,3 +293,53 @@ button {
     text-align: center;
     border-radius: 10%;
 }
+
+/* ////////////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////////////////////////////*/
+
+#Items {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 50%;
+    width: 2.5%;
+    background-color: black;
+    border: darkred solid 5px;
+    border-radius: 0 10px 10px 0;
+}
+
+#Smite {
+    margin: 1%;
+    height: 19%;
+    width: 100%;
+    background-color: black;
+}
+
+#Smite:hover {
+    background-color: darkred;
+}
+
+#Locked {
+    margin: 1%;
+    height: 19%;
+    width: 100%;
+    background-color: black;
+}
+
+#Locked:hover {
+    background-color: darkred;
+}
+#ItemsShopSmite {
+    position: fixed;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    border: darkred solid 10px;
+    border-radius: 20px;
+}
+
+/* //////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////*/
