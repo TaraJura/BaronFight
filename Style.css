@@ -3,19 +3,6 @@ body {
     background-color: black;
 }
 
-#Items {
-    position: absolute;
-    top: 15%;
-    left: 1%;
-    display: block;
-}
-
-#Smite {
-    height: 25%;
-    width: 25%;
-    background-color: black;
-}
-
 #help {
     position: absolute;
     top: 1%;
