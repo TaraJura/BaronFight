@@ -1,6 +1,52 @@
 
 body {
     background-color: black;
+    margin: 0 auto;
+}
+
+#loaderBackground {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    margin: 0 auto;
+}
+
+#logo {
+    position: fixed;
+    text-align: center;
+    top: 10%;
+    left: 45%;
+    width: 10%;
+    color: white;
+    z-index: 99;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid white;
+    border-right: 16px solid red;
+    border-bottom: 16px solid white;
+    border-left: 16px solid red;
+    position: fixed;
+    left: 47.5%;
+    top: 47.5%;
+    width: 5%;
+    height: 5%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 #help {

@@ -1,3 +1,9 @@
+function ExitLoader(){
+    var myobj = document.getElementById("loaderBackground");
+    myobj.remove();
+}
+setTimeout(ExitLoader, 2000);
+
 // Balanční změny Cena / DMG / Produkce / Upgrade  //
 
 ///////////////////////////// Yasuo 1
@@ -779,16 +785,6 @@ function HelpMe() {
 function HelpMeExit() {
     document.getElementById("HiddenHelpLayer").style.visibility = "hidden";
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
