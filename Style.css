@@ -4,6 +4,8 @@ body {
     margin: 0 auto;
 }
 
+/* ///////////////////////////////////////// LOADER must be first  */
+
 #loaderBackground {
     position: fixed;
     background-color: rgb(0, 0, 0);
@@ -48,6 +50,53 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/* /////////////////////////////////////////////////////////////////////////////////   */
+
+
+/* ////////////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////////////////////////////*/
+#Items {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 50%;
+    width: 2.5%;
+    background-color: black;
+    border: brown solid 5px;
+    border-radius: 0 10px 10px 0;
+}
+
+#Smite {
+    margin: 1%;
+    height: 19%;
+    width: 100%;
+    background-color: black;
+}
+
+#Smite:hover {
+    background-color: darkred;
+}
+
+#Locked {
+    margin: 1%;
+    height: 19%;
+    width: 100%;
+    background-color: black;
+}
+
+#ItemsShopSmite {
+    position: fixed;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+}
+
+/* //////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////*/
 
 #help {
     position: absolute;
@@ -150,6 +199,7 @@ visibility: hidden;
     height: 40%;
     left: 25%;
     visibility: hidden;
+    z-index: 200;
 }
 
 #ErrorMessage1 {
@@ -159,6 +209,7 @@ visibility: hidden;
     height: 40%;
     left: 25%;
     visibility: hidden;
+    z-index: 200;
 }
 
 #ErrorMessage2 {
@@ -168,6 +219,7 @@ visibility: hidden;
     height: 40%;
     left: 25%;
     visibility: hidden;
+    z-index: 200;
 }
 
 #container {

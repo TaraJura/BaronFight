@@ -804,10 +804,29 @@ function HelpMeExit() {
     document.getElementById("HiddenHelpLayer").style.visibility = "hidden";
 }
 
+///////////////////////////////////////////////// ITEMS /////////////////////////////////////////////////
 
+function CloseSmite() {
+    document.getElementById("ItemsShopSmite").style.visibility = "hidden";
+}
 
+function OpenShopSmite() {
+    document.getElementById("ItemsShopSmite").style.visibility = "visible";
+}
 
-
-
-
-
+function BuySmite() {
+    if (count >= 1000000) {
+     Yasuo1_Dmg += 50;
+    document.getElementById("Yasuo1_Dmg").innerHTML = Yasuo1_Dmg;
+    Yasuo2_Dmg += 50;
+    document.getElementById("Yasuo2_Dmg").innerHTML = Yasuo2_Dmg;
+    Yasuo3_Dmg += 50;
+    document.getElementById("Yasuo3_Dmg").innerHTML = Yasuo3_Dmg;
+    var SmiteDelete = document.getElementById("ItemsShopSmite");
+    SmiteDelete.remove();
+    document.getElementById("Smite").style.backgroundColor = "White";
+    }
+    else {
+        Error1();
+    }
+}
