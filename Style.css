@@ -295,11 +295,11 @@ button {
 #Items {
     position: absolute;
     top: 25%;
-    left: -2.75%;
-    height: 50%;
+    left: -2.9%;
+    height: 30%;
     width: 2.5%;
     background-color: black;
-    border: rgb(39, 39, 39) solid 3px;
+    border: rgb(39, 39, 39) solid 5px;
     border-radius: 0 10px 10px 0;
 }
 
@@ -311,8 +311,19 @@ button {
 }
 
 @keyframes example {
-    from {left: -2.75%;}
+    from {left: -2.9%;}
     to {left: 0;}
+}
+
+#InfinityEdge {
+    margin: 1%;
+    height: 19%;
+    width: 100%;
+    background-color: black;
+}
+
+#InfinityEdge:hover {
+    background-color: darkred;
 }
 
 #Smite {
@@ -326,6 +337,7 @@ button {
     background-color: darkred;
 }
 
+
 #Locked {
     margin: 1%;
     height: 19%;
@@ -337,12 +349,27 @@ button {
 #Locked:hover {
     background-color: darkred;
 }
+
+#ItemsShopInfinityEdge {
+    position: fixed;
+    height: 25%;
+    width: 25%;
+    top: 37.5%;
+    left: 37.5%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    border: rgb(39, 39, 39) solid 6px;
+    border-radius: 20px;
+}
+
 #ItemsShopSmite {
     position: fixed;
-    height: 50%;
-    width: 50%;
-    top: 25%;
-    left: 25%;
+    height: 25%;
+    width: 25%;
+    top: 37.5%;
+    left: 37.5%;
     background-color: black;
     text-align: center;
     color: white;
