@@ -184,7 +184,7 @@ var count = document.getElementById("count");
 function Active1() {
 
     document.getElementById("count").innerHTML = +count + 1;
-    count = +count + 10000000;
+    count = +count + 1;
 }
 
 
