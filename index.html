@@ -173,8 +173,8 @@
 
     <!-- Items  -->
     <div id="Items">
+        <img src="InfinityEdge.png" id="InfinityEdge" onclick="OpenShopInfinityEdge()">
         <img src="Smite.png" id="Smite" onclick="OpenShopSmite()">
-        <img src="Lock.png" id="Locked">
         <img src="Lock.png" id="Locked">
         <img src="Lock.png" id="Locked">
         <img src="Lock.png" id="Locked">
@@ -182,10 +182,19 @@
            <h1>Shop</h1>
         </div>
     </div>
+    <div id="ItemsShopInfinityEdge">
+        <h1>InfinityEdge</h1>
+        <p>Class Affected: Yasuo, Project Yasuo, Demonblade Yasuo.</p>
+        <p>Bonus: +50 DMG.</p>
+        <p>Cost: 1,000,000 </p>
+        <button onclick="BuyInfinityEdge()">Buy</button>
+        <button onclick="CloseInfinityEdge()">Cancel</button>
+    </div>
     <div id="ItemsShopSmite">
         <h1>Smite</h1>
-        <p>Yasuo gain + 50 dmg!</p>
-        <p>Cost: 1,000,000 </p>
+        <p>Class Affected: Baron</p>
+        <p>Bonus: 500,000 DMG </p>
+        <p>Cost: 10,000,000 </p>
         <button onclick="BuySmite()">Buy</button>
         <button onclick="CloseSmite()">Cancel</button>
     </div>
