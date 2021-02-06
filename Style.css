@@ -26,26 +26,30 @@ body {
 }
 
 .loader {
-    position: absolute;
-    border: 16px solid #f3f3f3; 
-    border-top: 16px solid #3498db;
+    border: 16px solid #f3f3f3;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    border-top: 16px solid white;
+    border-right: 16px solid red;
+    border-bottom: 16px solid white;
+    border-left: 16px solid red;
+    position: fixed;
+    left: 47.5%;
+    top: 47.5%;
+    width: 5%;
+    height: 5%;
+    -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-    top: 35%;
-    left: 46.5%;
-  }
+}
   
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
-  }
+}
   
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
 
 /* /////////////////////////////////////////////////////////////////////////////////   */
 
@@ -53,7 +57,7 @@ body {
     position: absolute;
     top: 1%;
     left: 1%;
-    color: darkred;
+    color: rgb(226, 40, 40);
     cursor: help;
 }
 
@@ -290,40 +294,17 @@ button {
     border-radius: 10%;
 }
 
-/*////////////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////////////////////////////*/
+/* ////////////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////////////////////////////*/
 
 #Items {
     position: absolute;
-    top: 25%;
-    left: -2.9%;
-    height: 30%;
+    top: 20%;
+    left: 0;
+    height: 50%;
     width: 2.5%;
     background-color: black;
-    border: rgb(39, 39, 39) solid 5px;
+    border: darkred solid 5px;
     border-radius: 0 10px 10px 0;
-}
-
-#Items:hover {
-    left: 0;
-    animation-name: example;
-    animation-duration: 0.5s;
-    color: royalblue;
-}
-
-@keyframes example {
-    from {left: -2.9%;}
-    to {left: 0;}
-}
-
-#InfinityEdge {
-    margin: 1%;
-    height: 19%;
-    width: 100%;
-    background-color: black;
-}
-
-#InfinityEdge:hover {
-    background-color: darkred;
 }
 
 #Smite {
@@ -337,7 +318,6 @@ button {
     background-color: darkred;
 }
 
-
 #Locked {
     margin: 1%;
     height: 19%;
@@ -345,45 +325,21 @@ button {
     background-color: black;
 }
 
-
 #Locked:hover {
     background-color: darkred;
 }
-
-#ItemsShopInfinityEdge {
-    position: fixed;
-    height: 25%;
-    width: 25%;
-    top: 37.5%;
-    left: 37.5%;
-    background-color: black;
-    text-align: center;
-    color: white;
-    visibility: hidden;
-    border: rgb(39, 39, 39) solid 6px;
-    border-radius: 20px;
-}
-
 #ItemsShopSmite {
     position: fixed;
-    height: 25%;
-    width: 25%;
-    top: 37.5%;
-    left: 37.5%;
+    height: 50%;
+    width: 50%;
+    top: 25%;
+    left: 25%;
     background-color: black;
     text-align: center;
     color: white;
     visibility: hidden;
-    border: rgb(39, 39, 39) solid 6px;
+    border: darkred solid 10px;
     border-radius: 20px;
-}
-
-#vertical {
-    position: absolute;
-    writing-mode: vertical-rl;
-    color:  darkred;
-    top: 40%;
-    left: 50%;
 }
 
 /* //////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////*/
