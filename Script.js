@@ -77,7 +77,7 @@ var Darius3_Produkce = 1500;
 
 //////////////////////////////////////////////// Baron HP 
 
-var DragonHealth = 5000000;
+var DragonHealth = 15000000;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -805,7 +805,34 @@ function HelpMeExit() {
 }
 
 ///////////////////////////////////////////////// ITEMS /////////////////////////////////////////////////
+//////////////////// infinityEdge ///////////////////////////////////////////////////
+function CloseInfinityEdge() {
+    document.getElementById("ItemsShopInfinityEdge").style.visibility = "hidden";
+}
 
+function OpenShopInfinityEdge() {
+    document.getElementById("ItemsShopInfinityEdge").style.visibility = "visible";
+}
+
+function BuyInfinityEdge() {
+    if (count >= 1000000) {
+    document.getElementById("count").innerHTML = +count - 1000000;
+    count -= 1000000;
+    Yasuo1_Dmg += 50;
+    document.getElementById("Yasuo1_Dmg").innerHTML = Yasuo1_Dmg;
+    Yasuo2_Dmg += 50;
+    document.getElementById("Yasuo2_Dmg").innerHTML = Yasuo2_Dmg;
+    Yasuo3_Dmg += 50;
+    document.getElementById("Yasuo3_Dmg").innerHTML = Yasuo3_Dmg;
+    var InfinityEdgeDelete = document.getElementById("ItemsShopInfinityEdge");
+    InfinityEdgeDelete.remove();
+    document.getElementById("InfinityEdge").style.backgroundColor = "White";
+    }
+    else {
+        Error1();
+    }
+}
+/////////////////////////////////// Smite ////////////////////////////////////////////
 function CloseSmite() {
     document.getElementById("ItemsShopSmite").style.visibility = "hidden";
 }
@@ -815,16 +842,19 @@ function OpenShopSmite() {
 }
 
 function BuySmite() {
-    if (count >= 1000000) {
-     Yasuo1_Dmg += 50;
-    document.getElementById("Yasuo1_Dmg").innerHTML = Yasuo1_Dmg;
-    Yasuo2_Dmg += 50;
-    document.getElementById("Yasuo2_Dmg").innerHTML = Yasuo2_Dmg;
-    Yasuo3_Dmg += 50;
-    document.getElementById("Yasuo3_Dmg").innerHTML = Yasuo3_Dmg;
+    if (count >= 10000000) {
+    document.getElementById("count").innerHTML = +count - 10000000;
+    count -= 10000000;
+    document.getElementById("DragonHealth").innerHTML = DragonHealth - 500000;
+    DragonHealth = DragonHealth - 500000;
     var SmiteDelete = document.getElementById("ItemsShopSmite");
     SmiteDelete.remove();
     document.getElementById("Smite").style.backgroundColor = "White";
+    GameOver();
+    document.getElementById("BaronGIF").style.visibility = "visible";
+    setTimeout(BaronFightGIF, 3000);
+    playAudio();
+    health.value -= 500000;
     }
     else {
         Error1();

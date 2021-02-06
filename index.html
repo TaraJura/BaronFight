@@ -15,8 +15,14 @@
     <title>Baron fight</title>
     <meta name="author" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=1080px, initial-scale=1">
-
+    <meta name="viewport" content="width=1080px">
+    <!--        Open Graph      -->
+    <meta property="og:title" content="Baron Fight"/>
+    <meta property="og:site_name" content="Baron Fight"/>
+    <meta property="og:description" content="Webová JavaScriptová Klikačka na téma League of Legends. Klikej, udělej armádu, zabij Barona! ! !"/>
+    <meta property="og:url" content="https://tarajura.github.io/">
+    <meta property="og:image" content="https://tarajura.github.io/BaronNahled.jpg"/>
+        <!--                      -->
     <link href="Style.css" rel="stylesheet">
     <script src="Script.js"></script>
 </head>
@@ -163,7 +169,7 @@
     <div id="druhacast">
         <div id="DragonFight">
             <div id="BaronPlace">
-                <h1>Baron Health: <a id="DragonHealth">5000000</a><a> / 5,000,000 Health <progress id="health" value="5000000" max="5000000"></progress> </a><a> <button onclick="BaronFightGIF2()"> Atack Baron </button></a></h1>
+                <h1>Baron Health: <a id="DragonHealth">15000000</a><a> / 15,000,000 Health <progress id="health" value="5000000" max="5000000"></progress> </a><a> <button onclick="BaronFightGIF2()"> Atack Baron </button></a></h1>
             </div>
                 <img src="DRAGON.png" id="DRAGON">
         </div>
@@ -173,16 +179,28 @@
 
     <!-- Items  -->
     <div id="Items">
+        <img src="InfinityEdge.png" id="InfinityEdge" onclick="OpenShopInfinityEdge()">
         <img src="Smite.png" id="Smite" onclick="OpenShopSmite()">
         <img src="Lock.png" id="Locked">
         <img src="Lock.png" id="Locked">
         <img src="Lock.png" id="Locked">
-        <img src="Lock.png" id="Locked">
+        <div id="vertical">
+           <h1>Shop</h1>
+        </div>
+    </div>
+    <div id="ItemsShopInfinityEdge">
+        <h1>InfinityEdge</h1>
+        <p>Class Affected: Yasuo, Project Yasuo, Demonblade Yasuo.</p>
+        <p>Bonus: +50 DMG.</p>
+        <p>Cost: 1,000,000 </p>
+        <button onclick="BuyInfinityEdge()">Buy</button>
+        <button onclick="CloseInfinityEdge()">Cancel</button>
     </div>
     <div id="ItemsShopSmite">
         <h1>Smite</h1>
-        <p>Yasuo gain + 50 dmg!</p>
-        <p>Cost: 1,000,000 </p>
+        <p>Class Affected: Baron</p>
+        <p>Bonus: 500,000 DMG </p>
+        <p>Cost: 10,000,000 </p>
         <button onclick="BuySmite()">Buy</button>
         <button onclick="CloseSmite()">Cancel</button>
     </div>
