@@ -15,6 +15,18 @@ body {
     margin: 0 auto;
 }
 
+#highscore {
+    position: absolute;
+    top: 2.5%;
+    left: 87%;
+    width: 12%;
+    opacity: 75%;
+}
+
+#highscore:hover {
+    opacity: 100%;
+}
+
 #logo {
     position: fixed;
     text-align: center;
