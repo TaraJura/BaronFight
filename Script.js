@@ -2,7 +2,7 @@ function ExitLoader(){
     var myobj = document.getElementById("loaderBackground");
     myobj.remove();
 }
-setTimeout(ExitLoader, 2000);
+setTimeout(ExitLoader, 2500);
 
 // Balanční změny Cena / DMG / Produkce / Upgrade  //
 
@@ -81,6 +81,17 @@ var DragonHealth = 15000000;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+////////////////////  game loader ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function ZapnoutHru() {
+    document.getElementById("GameStart").style.visibility = "hidden";
+}
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Picture of Sam creating engine //
 
@@ -839,6 +850,10 @@ function CloseSmite() {
 
 function OpenShopSmite() {
     document.getElementById("ItemsShopSmite").style.visibility = "visible";
+}
+
+function Vyvojar() {
+    window.open("https://github.com/TaraJura?tab=overview&from=2021-07-01&to=2021-07-18");
 }
 
 function BuySmite() {
