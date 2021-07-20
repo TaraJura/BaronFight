@@ -28,6 +28,18 @@
 </head>
 
 <body>
+    <!--  Dabing  -->
+    <div id="dabing">
+        <h3 onclick="DabingOnOff()" id="DabingText">Dabing ON</h3>
+    </div>
+    <!--    -->
+     <!-- Mobilní optimalizace   -->
+    <div id="PhoneOptimalization">
+        <div id="PhoneWarning">
+
+        </div>
+    </div>
+      <!--    -->
     <!-- Herní lobby  -->
     <div id="GameStart">
         <h1 id="nadpis">Baron Fight</h1>
@@ -41,8 +53,6 @@
             <button onclick="Vyvojar()">Vývojář</button>    
         </div>
     </div>
-    <!-- High Score   -->
-    <img src="tabulka.png" id="highscore">
     <div id="loaderBackground">
         <div class="loader"></div>
         <h1 id="logo">Baron Fight</h1>
@@ -240,7 +250,23 @@
     <!-- baron sound -->
     <audio id="myAudio">
         <source src="BaronMP3.mp3" type="audio/mpeg">
-      </audio>
+    </audio>
+    <!-- Dabing  -->
+    <audio id="Cilhry">
+        <source src="CZ_Dabing_Baronfight - kopie/Cíl_hry.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="NemasRP">
+        <source src="CZ_Dabing_Baronfight - kopie/Nemáš_dostatek_riotPointů.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="NemasVojakyNaBarona">
+        <source src="CZ_Dabing_Baronfight - kopie/Pro_útok_na_barona_je_potřevba_100_championů.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="BaronTiZabil">
+        <source src="CZ_Dabing_Baronfight - kopie/Baron_ti_zabil_všechny_champiny.mp3" type="audio/mpeg">
+    </audio>
       
       <script>
       var x = document.getElementById("myAudio"); 
@@ -248,10 +274,30 @@
       function playAudio() { 
         x.play(); 
       } 
+
+      var y = document.getElementById("Cilhry"); 
+
+      function GameStartDabing() { 
+        y.play(); 
+      } 
+
+      var z = document.getElementById("NemasRP"); 
+
+      function NemasRPFunkce() { 
+        z.play(); 
+      } 
+
+      var atackB = document.getElementById("NemasVojakyNaBarona"); 
+
+      function NemasVojakyNaBaronaFunkce() { 
+        atackB.play(); 
+      }
+
+      var BaronTiZabilVojaky = document.getElementById("BaronTiZabil"); 
+
+     function BaronTiZabilVojakyFunkce() { 
+        BaronTiZabilVojaky.play(); 
+}
       </script>
-
-      <!--  /////////////////////          -->
-
 </body>
-
 </html>

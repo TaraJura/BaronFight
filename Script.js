@@ -80,16 +80,34 @@ var Darius3_Produkce = 1500;
 var DragonHealth = 15000000;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////  Dabing 
 
-////////////////////  game loader ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-function ZapnoutHru() {
-    document.getElementById("GameStart").style.visibility = "hidden";
+var Dabing = true;
+
+function DabingOnOff() {
+    if (Dabing == true) {
+        document.getElementById("DabingText").innerHTML = "Dabing OFF";
+        document.getElementById("DabingText").style.color = "red";
+        Dabing = false;
+    }
+    else {
+        document.getElementById("DabingText").innerHTML = "Dabing ON";
+        document.getElementById("DabingText").style.color = "rgb(38, 194, 10";
+        Dabing = true;
+    }
 }
 
+////////////////////  game loader 
 
-
-
-
+function ZapnoutHru() {
+    if (Dabing == true) {
+    GameStartDabing();
+    document.getElementById("GameStart").style.visibility = "hidden";
+    }
+    else {
+    document.getElementById("GameStart").style.visibility = "hidden";
+    }
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -206,8 +224,17 @@ function Error2() {
 }
 
 function Error1() {
+    if (Dabing == true) {
     document.getElementById("ErrorMessage").style.visibility = "visible";
-    setTimeout(Error2, 1000);
+    setTimeout(Error2, 1000);   
+    NemasRPFunkce();
+    }
+    else {
+    document.getElementById("ErrorMessage").style.visibility = "visible";
+    setTimeout(Error2, 1000);   
+    }
+
+    
 }
 
 // Killed workers // 
@@ -793,15 +820,29 @@ function BaronFightGIF() {
 
 function BaronFightGIF2() {
 
+    
     if(WorkerCount >= 100) {
-
-    document.getElementById("BaronGIF").style.visibility = "visible";
-    setTimeout(BaronFightGIF, 3000);
-    setTimeout(AtackDragon, 3100);
-    playAudio();
+        if (Dabing == true) {
+        document.getElementById("BaronGIF").style.visibility = "visible";
+        setTimeout(BaronFightGIF, 3000);
+        setTimeout(AtackDragon, 3100);
+        playAudio();
+        }
+        else {
+        document.getElementById("BaronGIF").style.visibility = "visible";
+        setTimeout(BaronFightGIF, 3000);
+        setTimeout(AtackDragon, 3100);
+        playAudio();
+        }
     }
     else {
+        if (Dabing == true) {
         NoArmy();
+        NemasVojakyNaBaronaFunkce();
+        }
+        else {
+        NoArmy();
+        }
     }
 }
 

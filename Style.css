@@ -15,18 +15,6 @@ body {
     margin: 0 auto;
 }
 
-#highscore {
-    position: absolute;
-    top: 2.5%;
-    left: 87%;
-    width: 12%;
-    opacity: 75%;
-}
-
-#highscore:hover {
-    opacity: 100%;
-}
-
 #logo {
     position: fixed;
     text-align: center;
@@ -437,3 +425,16 @@ button {
 }
 
 /* //////////////////////////////////////////////////////////////////Items , SHOP /////////////////////////////////////////*/
+
+/* //////////////////////////////////////////////////////////////////Dabing /////////////////////////////////////////*/
+
+#dabing {
+    position: fixed;
+    top: 0;
+    z-index: 105;
+    color: rgb(38, 194, 10);
+    right: 1%;
+    cursor: -webkit-grab; cursor: grab;
+}
+
+/* ///////////////////////////////////////////////////////////////// Dabing /////////////////////////////////////////*/
