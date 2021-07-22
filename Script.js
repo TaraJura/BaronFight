@@ -200,9 +200,16 @@ function WorkerMaxPicture_3() {
 // Gems per Second // 
 
 var GemsPerSecCounter = document.getElementById("GemsPerSecond");
+var GemsPerSecCounterX = document.getElementById("GemsPerSecondX");
 
 function GemsPerSecond() {
     document.getElementById("GemsPerSecond").innerHTML = (WorkerSam * Yasuo1_Produkce) + (WorkerSam_2 * Yasuo2_Produkce) + (WorkerSam_3 * Yasuo3_Produkce) + (WorkerRick * Fiora1_Produkce) + (WorkerRick_2 * Fiora2_Produkce) + (WorkerRick_3 * Fiora3_Produkce) + (WorkerMax * Darius1_Produkce) + (WorkerMax_2 * Darius2_Produkce) + (WorkerMax_3 * Darius3_Produkce); 
+    GemsPerSecCounter = (WorkerSam * Yasuo1_Produkce) + (WorkerSam_2 * Yasuo2_Produkce) + (WorkerSam_3 * Yasuo3_Produkce) + (WorkerRick * Fiora1_Produkce) + (WorkerRick_2 * Fiora2_Produkce) + (WorkerRick_3 * Fiora3_Produkce) + (WorkerMax * Darius1_Produkce) + (WorkerMax_2 * Darius2_Produkce) + (WorkerMax_3 * Darius3_Produkce);
+    GemsPerSecondX();
+}
+
+function GemsPerSecondX() {
+    document.getElementById("GemsPerSecondX").innerHTML = (WorkerSam * Yasuo1_Produkce) + (WorkerSam_2 * Yasuo2_Produkce) + (WorkerSam_3 * Yasuo3_Produkce) + (WorkerRick * Fiora1_Produkce) + (WorkerRick_2 * Fiora2_Produkce) + (WorkerRick_3 * Fiora3_Produkce) + (WorkerMax * Darius1_Produkce) + (WorkerMax_2 * Darius2_Produkce) + (WorkerMax_3 * Darius3_Produkce); 
     GemsPerSecCounter = (WorkerSam * Yasuo1_Produkce) + (WorkerSam_2 * Yasuo2_Produkce) + (WorkerSam_3 * Yasuo3_Produkce) + (WorkerRick * Fiora1_Produkce) + (WorkerRick_2 * Fiora2_Produkce) + (WorkerRick_3 * Fiora3_Produkce) + (WorkerMax * Darius1_Produkce) + (WorkerMax_2 * Darius2_Produkce) + (WorkerMax_3 * Darius3_Produkce);
 }
 
@@ -922,6 +929,10 @@ function OpenShopSmite() {
 
 function Vyvojar() {
     window.open("https://github.com/TaraJura?tab=overview&from=2021-07-01&to=2021-07-18");
+}
+
+function GameInfo() {
+    window.open("https://www.facebook.com/BaronFightCZ");
 }
 
 function BuySmite() {

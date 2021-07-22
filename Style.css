@@ -225,8 +225,6 @@ visibility: hidden;
 }
 
 #InfoTable2{
-    border: solid;
-    border-radius: 10px;
     text-align: center;
 }
 
@@ -236,9 +234,13 @@ visibility: hidden;
 
 #help2 {
     position: absolute;
+    top: 1%;
     left: 60%;
-    color: darkred;
+    color: rgb(168, 11, 11);
     cursor: help;
+    background-color: rgba(0, 0, 0, 0.26);
+    border: solid black 1px;
+    border-radius: 10px;
 }
 
 #help3 {
