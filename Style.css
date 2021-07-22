@@ -237,10 +237,7 @@ visibility: hidden;
     top: 1%;
     left: 60%;
     color: rgb(168, 11, 11);
-    cursor: help;
-    background-color: rgba(0, 0, 0, 0.26);
-    border: solid black 1px;
-    border-radius: 10px;
+
 }
 
 #help3 {
