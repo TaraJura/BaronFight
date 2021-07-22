@@ -163,18 +163,27 @@ visibility: hidden;
     vertical-align: middle;
 }
 
+#ChallBanner {
+    height: 50%;
+    width: 60%;
+ }
+
+#RiotPoints123 {
+    margin: 0 auto;
+}
+
+#SummonersRiftChamps  {
+    text-align: center;
+}
 
 #CountingBlock {
+    top: 0;
+    left: 39vw;
+    height: 15Vh;
+    width: 20vw;
     text-align: center;
-    position: sticky;
-    top: 0%;
-    background-color: white;
-    width: 20%;
-    left: 40%;
-    border-radius: 0 0 40% 40%;
-    opacity: 80%;
-    border: solid ;
-    z-index: 5;
+    position: relative;
+    margin-bottom: 5%;
 }
 
 #stealth {
@@ -209,6 +218,35 @@ visibility: hidden;
     left: 25%;
     visibility: hidden;
     z-index: 200;
+}
+
+#InfoTable{
+ text-align: center;
+}
+
+#InfoTable2{
+    border: solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#InfoTable td {
+    width: 9vw;
+}
+
+#help2 {
+    position: absolute;
+    left: 60%;
+    color: darkred;
+    cursor: help;
+}
+
+#help3 {
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    color: darkred;
+    cursor: help;
 }
 
 #container {

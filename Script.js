@@ -270,6 +270,7 @@ function NoArmy() {
 // WOrker SAM // 
 
 var WorkerSam = document.getElementById("WorkerSam");
+var WorkerSamX = document.getElementById("WorkerSamX");
 
 function Active2() {
     if (count >= Yasuo1_Cena) {
@@ -278,7 +279,9 @@ function Active2() {
         Yasuo1_Cena = Yasuo1_Cena + Yasuo1_CenaScale;
         document.getElementById("Yasuo1_Cena").innerHTML = Yasuo1_Cena;
         document.getElementById("WorkerSam").innerHTML = +WorkerSam + 1;
+        document.getElementById("WorkerSamX").innerHTML = +WorkerSamX + 1;
         WorkerSam = +WorkerSam + 1;
+        WorkerSamX = +WorkerSamX + 1;
         WorkerSamPicture();
         WorkerCountFunction();
         GemsPerSecond();
@@ -302,6 +305,7 @@ function Active2_1() {
 // Worker Sam 2 Upgraded // 
 
 var WorkerSam_2 = document.getElementById("WorkerSam_2");
+var WorkerSam_2X = document.getElementById("WorkerSam_2X");
 
 function Active2_2() {
     if (count >= Yasuo2_Cena) {
@@ -310,7 +314,9 @@ function Active2_2() {
         Yasuo2_Cena = Yasuo2_Cena + Yasuo2_CenaScale;
         document.getElementById("Yasuo2_Cena").innerHTML = Yasuo2_Cena;
         document.getElementById("WorkerSam_2").innerHTML = +WorkerSam_2 + 1;
+        document.getElementById("WorkerSam_2X").innerHTML = +WorkerSam_2X + 1;
         WorkerSam_2 = +WorkerSam_2 + 1;
+        WorkerSam_2X = +WorkerSam_2X + 1;
         WorkerSamPicture_2();
         WorkerCountFunction();
         GemsPerSecond();
@@ -334,6 +340,7 @@ function Active2_3() {
 // Worker SAM 3 UPGRADED // 
 
 var WorkerSam_3 = document.getElementById("WorkerSam_3");
+var WorkerSam_3X = document.getElementById("WorkerSam_3X");
 
 function Active2_4() {
 
@@ -343,7 +350,9 @@ function Active2_4() {
         Yasuo3_Cena = Yasuo3_Cena + Yasuo3_CenaScale;
         document.getElementById("Yasuo3_Cena").innerHTML = Yasuo3_Cena;
         document.getElementById("WorkerSam_3").innerHTML = +WorkerSam_3 + 1;
+        document.getElementById("WorkerSam_3X").innerHTML = +WorkerSam_3X + 1;
         WorkerSam_3 = +WorkerSam_3 + 1;
+        WorkerSam_3X = +WorkerSam_3X + 1;
         WorkerSamPicture_3();
         WorkerCountFunction();
         GemsPerSecond();
@@ -368,6 +377,7 @@ function Active2_5() {
 
  // Worker Rick //
  var WorkerRick = document.getElementById("WorkerRick");
+ var WorkerRickX = document.getElementById("WorkerRickX");
 
  function Active3() {
      if (count >= Fiora1_Cena) {
@@ -377,7 +387,9 @@ function Active2_5() {
          Fiora1_Cena = Fiora1_Cena + Fiora1_CenaScale;
         document.getElementById("Fiora1_Cena").innerHTML = Fiora1_Cena;
          document.getElementById("WorkerRick").innerHTML = +WorkerRick + 1;
+         document.getElementById("WorkerRickX").innerHTML = +WorkerRickX + 1;
          WorkerRick = +WorkerRick + 1;
+         WorkerRickX = +WorkerRickX + 1;
          WorkerRickPicture();
          WorkerCountFunction();
          GemsPerSecond();
@@ -404,6 +416,7 @@ function Active2_5() {
  // Worker Rick 2 Upgraded // 
 
 var WorkerRick_2 = document.getElementById("WorkerRick_2");
+var WorkerRick_2X = document.getElementById("WorkerRick_2X");
 
 function Active3_2() {
     if (count >= Fiora2_Cena) {
@@ -412,7 +425,9 @@ function Active3_2() {
         Fiora2_Cena = Fiora2_Cena + Fiora2_CenaScale;
         document.getElementById("Fiora2_Cena").innerHTML = Fiora2_Cena;
         document.getElementById("WorkerRick_2").innerHTML = +WorkerRick_2 + 1;
+        document.getElementById("WorkerRick_2X").innerHTML = +WorkerRick_2X + 1;
         WorkerRick_2 = +WorkerRick_2 + 1;
+        WorkerRick_2X = +WorkerRick_2X + 1;
         WorkerRickPicture_2();
         WorkerCountFunction();
         GemsPerSecond();
@@ -436,6 +451,7 @@ function Active3_3() {
 // Worker Rick 3 UPGRADED // 
 
 var WorkerRick_3 = document.getElementById("WorkerRick_3");
+var WorkerRick_3X = document.getElementById("WorkerRick_3X");
 
 function Active3_4() {
 
@@ -445,7 +461,9 @@ function Active3_4() {
         Fiora3_Cena = Fiora3_Cena + Fiora3_CenaScale;
         document.getElementById("Fiora3_Cena").innerHTML = Fiora3_Cena;
         document.getElementById("WorkerRick_3").innerHTML = +WorkerRick_3 + 1;
+        document.getElementById("WorkerRick_3X").innerHTML = +WorkerRick_3X + 1;
         WorkerRick_3 = +WorkerRick_3 + 1;
+        WorkerRick_3X = +WorkerRick_3X + 1;
         WorkerRickPicture_3();
         WorkerCountFunction();
         GemsPerSecond();
@@ -470,6 +488,7 @@ function Active3_5() {
 
   // Worker Max // 
   var WorkerMax = document.getElementById("WorkerMax");
+  var WorkerMaxX = document.getElementById("WorkerMaxX");
  
   function Active4() {
       if (count > Darius1_Cena) {
@@ -479,7 +498,9 @@ function Active3_5() {
           Darius1_Cena = Darius1_Cena + Darius1_CenaScale;
           document.getElementById("Darius1_Cena").innerHTML = Darius1_Cena;
           document.getElementById("WorkerMax").innerHTML = +WorkerMax + 1;
+          document.getElementById("WorkerMaxX").innerHTML = +WorkerMaxX + 1;
           WorkerMax = +WorkerMax + 1;
+          WorkerMaxX = +WorkerMaxX + 1;
           WorkerMaxPicture();
           WorkerCountFunction();
           GemsPerSecond();
@@ -506,6 +527,7 @@ function Active3_5() {
   // Worker MAX 2 Upgraded // 
 
 var WorkerMax_2 = document.getElementById("WorkerMax_2");
+var WorkerMax_2X = document.getElementById("WorkerMax_2X");
 
 function Active4_2() {
     if (count >= Darius2_Cena) {
@@ -514,7 +536,9 @@ function Active4_2() {
         Darius2_Cena = Darius2_Cena + Darius2_CenaScale;
         document.getElementById("Darius2_Cena").innerHTML = Darius2_Cena;
         document.getElementById("WorkerMax_2").innerHTML = +WorkerMax_2 + 1;
+        document.getElementById("WorkerMax_2X").innerHTML = +WorkerMax_2X + 1;
         WorkerMax_2 = +WorkerMax_2 + 1;
+        WorkerMax_2X = +WorkerMax_2X + 1;
         WorkerMaxPicture_2();
         WorkerCountFunction();
         GemsPerSecond();
@@ -538,6 +562,7 @@ function Active4_3() {
 // Worker MAX 3 UPGRADED // 
 
 var WorkerMax_3 = document.getElementById("WorkerMax_3");
+var WorkerMax_3X = document.getElementById("WorkerMax_3X");
 
 function Active4_4() {
 
@@ -547,7 +572,9 @@ function Active4_4() {
         Darius3_Cena = Darius3_Cena + Darius3_CenaScale;
         document.getElementById("Darius3_Cena").innerHTML = Darius3_Cena;
         document.getElementById("WorkerMax_3").innerHTML = +WorkerMax_3 + 1;
+        document.getElementById("WorkerMax_3X").innerHTML = +WorkerMax_3X + 1;
         WorkerMax_3 = +WorkerMax_3 + 1;
+        WorkerMax_3X = +WorkerMax_3X + 1;
         WorkerMaxPicture_3();
         WorkerCountFunction();
         GemsPerSecond();

@@ -58,16 +58,43 @@
         <h1 id="logo">Baron Fight</h1>
         <p></p>
     </div>
-    <div id="help"><p onclick="HelpMe()">How to play ?</p></div>
+    <div id="help"><h3 onclick="HelpMe()">How to play ?</h3></div>
+    <div id="help2">
+        <table id="InfoTable">
+            <tr>
+                <td><p>Yasuo<br><a id="WorkerSamX">0</a></p></td>
+                <td><p>Project Yasuo<br><a id="WorkerSam_2X"> 0</a></p></td>
+                <td><p>Demonblade Yasuo<br><a id="WorkerSam_3X"> 0</a></p></td>
+            </tr>
+            <tr>
+                <td><p>Fiora<br><a id="WorkerRickX">0</a></p></td>
+                <td><p>Bazénová Fiora<br><a id="WorkerRick_2X">0</a></p></p></td>
+                <td><p>Zlatá Fiora<br><a id="WorkerRick_3X">0</a></p></td>
+            </tr>
+            <tr>
+                <td><p>Darius<br><a id="WorkerMaxX">0</a></p></td>
+                <td><p>Zabiják Dárius<br><a id="WorkerMax_2X">0</a></p></td>
+                <td><p>Toxický Zabiják Baronů Darius<br><a id="WorkerMax_3X">0</a></p></td>
+            </tr>
+        </table>
+    </div>
+    <div id="help3">
+        <table id="InfoTable2">
+            <tr>
+                <td><h3>Celková Armáda<hr><a id="WorkerCount"> 0</a></h3></td>
+            </tr>
+        </table>
+    </div>
     <div id="prvnicast">
         <div id="container">
             <div id="CountingBlock">
-                <img src="rp.png" id="GEM2">
-                <h1>Riot Points: <a id="count"> 0</a></h1>
+                <h1 id="RiotPoints123">Riot Points: <a id="count"> 0</a></h1>
                 <p>RP / Sec: <a id="GemsPerSecond">0</a></p>
                 <button onclick="Active1()" id="ClickerButton"><strong>1x Riot Point</strong></button>
-            </div>
-            <h1>Summoner's Rift Champions <a id="WorkerCount"> 0</a></h1>          
+                <br>
+                <img src="ChallBanner.png" id="ChallBanner">
+                <br>
+            </div>         
             <!-- Yasuo  -->
             <div id="SamGroup">
                 <li id="SamUpgrade1">
@@ -189,7 +216,7 @@
             <img id="ErrorMessage1" src="DragonKill.png">
             <img id="ErrorMessage2" src="NoArmy.jpg">
         </div>
-        <div id="champ"><h1>Your Champions:<a id="WorkerCount1"> 0</a></h1></div>
+        <div id="champ"><h1>Tvoje Armáda:<a id="WorkerCount1"> 0</a></h1></div>
     </div>
     <div id="druhacast">
         <div id="DragonFight">
