@@ -1,3 +1,8 @@
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
+
+
 function ExitLoader(){
     var myobj = document.getElementById("loaderBackground");
     myobj.remove();
